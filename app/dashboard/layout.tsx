@@ -1,5 +1,7 @@
 import SideNav from "../ui/dashboard/sidenav";
 
+export const experimental_ppr = true;
+// 在开发过程中看不到效果，只有在生产环境中才会生效
 
 export default function Layout({children}: {children: React.ReactNode}) {
   return (
