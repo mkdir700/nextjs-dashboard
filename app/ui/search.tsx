@@ -21,6 +21,8 @@ export default function Search({ placeholder }: { placeholder: string }) {
   function handleSearch(term: string) {
     console.log(`Searching... ${term}`);
     const params = new URLSearchParams(searchParams);
+    // 当用户输入新的搜索查询时，将页码重置为 1
+    params.set('page', '1');
     if (term) {
       params.set('query', term);
     } else {
