@@ -74,6 +74,9 @@ export async function updateInvoice(id: string, formData: FormData) {
 }
 
 export async function deleteInvoice(id: string) {
+  // For chapter13-error-handling
+  // throw new Error("Failed to Delete Invoice");
+
   try {
     await sql`
     DELETE FROM INVOICES
